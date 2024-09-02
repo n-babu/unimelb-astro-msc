@@ -1,0 +1,307 @@
+\documentclass[11pt, oneside, a4paper]{article}
+\usepackage{graphicx} 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=20mm, top=30mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+\usepackage{soul}
+% Will make black underlines for links
+% \hypersetup{
+%   colorlinks=true,
+%   linkcolor=black,
+%   linkbordercolor=black,
+% }
+% \makeatletter
+% \Hy@AtBeginDocument{%
+%   \def\@pdfborder{0 0 1}
+%   \def\@pdfborderstyle{/S/U/W 1}
+% }
+% \makeatother
+
+\newcommand{\myboxcolor}{MidnightBlue}
+\newcommand{\tipscolor}{ForestGreen}
+
+\definecolor{mygray}{rgb}{0.92, 0.92, 0.92}
+
+\fancyhead[L]{Astro Master's Assessments}
+\fancyhead[R]{Last Updated: 30/07/2024}
+\fancypagestyle{firstpage}{
+  \lhead{Astro Master's Assessments \\ Editors: Nithin Babu \& Tong Cheunchitra}
+  \rhead{Last Updated: 30/07/2024}
+}
+
+\newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\title{Astro Master's Research Project Assessment Guideline}
+
+\begin{document}
+
+\pagestyle{fancy}
+\thispagestyle{firstpage}                                      
+{\centering \LARGE \textsc{Astro Master's Research Project Assessment Guideline} \\}
+\vspace{0.5em}
+
+Hello, new Astro Master's students!
+This unofficial document is made and maintained by past students to summarise and explain what you need to do for each assessment in your Master's and when you should do them. 
+
+\begin{tcolorbox}[colback=\myboxcolor!5!white,colframe=\myboxcolor!50!white,title=Note]
+    The assessments in this document are specific to the Research Project, and do not apply to semesters where you don't complete any research (as part of an official subject).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!white,title={IMPORTANT}]
+    This is an \textbf{unofficial document}, always do your own research/double-checking to ensure you get the correct information and consult with your supervisor. 
+\end{tcolorbox} 
+
+\section*{Assessment Timelines}
+
+Depending on your research track, each assessment will be due at a different time. 
+Here is an outline of the assessments based on the standard pathways. 
+If your Master's does not follow any of the pathways given\footnote{In extreme circumstances, there are alternative pathways, such as (but not limited to) a 1-1-3-3 with PHYC90029,
+PHYC90033, PHYC90049, and PHYC90050. These can be found in the Unimelb Handbook.}, talk to your supervisor and the Physics Master's Coordinator (currently, A/Prof. David Simpson, \url{simd@unimelb.edu.au}) about what assessment will be due at what time.
+
+\begin{table}[hbt]
+    \centering
+    \begin{tblr}{colspec={Q[l,m]Q[l,m]Q[r,m]Q[l,m]}, rowspec={|[2pt]Q|[2pt]QQ[mygray]QQ[mygray]|[1.5pt]QQ[mygray]Q|[1.5pt]QQ[mygray]Q|[2pt]}}
+        \textbf{Track} & \textbf{Research Component} & \textbf{Units (Points)} & \textbf{Assessments Required} \\
+        \SetCell[r=4]{c} A & {Physics Research Project Pt 1 \\ (PHYC90029)} & 1 (12.5) & \hyperref[ProgressMeeting]{Progress Meeting} \\
+        & {Physics Research Project Pt 2 \\ (PHYC90033)} & 1 (12.5) & {\hyperref[ProgressMeeting]{Progress Meeting} + \hyperref[GroupSeminar]{Group Seminar} OR \\ \hyperref[Report]{5-page Report}} \\
+        & {Physics Research Project Pt 3 \\ (PHYC90038)} & 2 (25.0) & {\hyperref[ProgressMeeting]{Progress Meeting} + \hyperref[LitReview]{Literature Review} + \\ \hyperref[GroupSeminar]{Group Seminar} + \hyperref[AdvSeminar]{Advanced Seminar}} \\
+        & {Physics Research Project Pt 4 \\ (PHYC90044)} & 4 (50.0) & \hyperref[Thesis]{Final Thesis} + \hyperref[FinalTalk]{Final Talk} \\
+        \SetCell[r=3]{c} B & {Physics Research Project Pt 1 \\ (PHYC90029)} & 1 (12.5) & \hyperref[ProgressMeeting]{Progress Meeting} \\
+        & {Physics Research Project Pt 2 \\ (PHYC90035)} & 3 (37.5) & {\hyperref[ProgressMeeting]{Progress Meeting} + \hyperref[LitReview]{Literature Review} + \\ \hyperref[GroupSeminar]{Group Seminar} + \hyperref[AdvSeminar]{Advanced Seminar}} \\
+        & {Physics Research Project Pt 3 \\ (PHYC90040)} & 4 (50.0) & \hyperref[Thesis]{Final Thesis} + \hyperref[FinalTalk]{Final Talk} \\
+        \SetCell[r=3]{c} C & {Physics Research Project Pt 1 \\ (PHYC90030)} & 2 (25.0) & {\hyperref[ProgressMeeting]{Progress Meeting} + \hyperref[GroupSeminar]{Group Seminar} OR \\ \hyperref[Report]{5-page Report}} \\
+        & {Physics Research Project Pt 2 \\ (PHYC90034)} & 2 (25.0) & {\hyperref[ProgressMeeting]{Progress Meeting} + \hyperref[LitReview]{Literature Review} + \\ \hyperref[GroupSeminar]{Group Seminar} + \hyperref[AdvSeminar]{Advanced Seminar}} \\
+        & {Physics Research Project Pt 3 \\ (PHYC90040)} & 4 (50.0) & \hyperref[Thesis]{Final Thesis} + \hyperref[FinalTalk]{Final Talk} \\
+    \end{tblr}
+    \label{tab:Timelines}
+\end{table} 
+
+\section*{Mark Breakdown}
+
+The mark breakdown for your project is given in the table below. 
+You might note that many assessments mentioned are not given here.
+That is because all other assessments are hurdle requirements: required but they do not contribute to the final mark.
+
+\begin{table}[hbt]
+    \centering
+    \begin{tblr}{colspec={Q[l,m]Q[r,m]},
+    rowspec={|[2pt]Q|[2pt]QQ[mygray]Q|[2pt]}}
+    Assessment & Contribution to Final Mark \\
+    Final Thesis & 70\% \\
+    Final Talk & 10\% \\
+    Research Performance (as marked by Supervisor) & 20\%
+    \end{tblr}
+    \label{tab:MarkBreakdown}
+\end{table}
+
+\section*{Assessment Descriptions}
+
+In this section, we briefly describe the assessments and give tips and tricks on how to efficiently do them. \textbf{P/F} indicates that the assessment is graded on a pass/fail basis, and \textbf{M} indicates that it is marked.
+
+\subsection*{Progress Meeting (P/F)}\label{ProgressMeeting}
+
+The \textit{Progress Meeting} is a short meeting with your supervisor/s to discuss and provide feedback on your current progress through the research project, and review future plans. 
+About a week before the conclusion of each semester, you will get an email from the School's Academic Support Officer (at the time of writing, Poppy Gatsios, \url{plegakis@unimelb.edu.au}, alternatively \url{physics-aso@unimelb.edu.au}) reminding you about this meeting, along with the form that needs to be filled out in this meeting. 
+
+\noindent
+\textbf{Submission:} by email, to Poppy, using \url{physics-aso@unimelb.edu.au}
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item The meeting is to verify whether your progress is sufficient for that stage of your research program. The meeting itself is not graded. Generally, a supervisor will let you know long before this point if you are not performing to their standard. 
+    \end{itemize}
+\end{tcolorbox}
+
+
+
+\subsection*{Group Seminar (P/F)}\label{GroupSeminar}
+
+\textit{Group Seminars} are short 15-minute talks with 5 minutes for questions. These talks are given during your research group's meetings or the Astro group meetings (2:15 pm on Mondays). 
+The topic of the talk will be your research up to that point, with some background knowledge and a little on your future plans. 
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item This talk is a good opportunity to get feedback on both your research and presentation skills. Communicating your science is almost as important as the research outcomes! 
+        \item The Astro research group is very friendly and so these talks will be a bit casual, so don't worry if you think you messed up a little. 
+        \item By the time you give these talk(s), you will have seen some examples from more senior MSc and PhD students. 
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks (cont.)}]
+    \begin{itemize}
+        \item The outline given above is not a strict requirement; it is more of a suggestion. You should talk about topics related to your research, but the manner and focus are entirely up to you.
+    \end{itemize}
+\end{tcolorbox}
+
+
+\subsection*{5-page Report (P/F)}\label{Report}
+
+The \textit{5-page report} is a short overview of what you have done up to this point. 
+The formatting of this should mimic the Final Thesis (check the LMS), including an abstract and references.
+% Along with the usual contents of a report (introduction, body, conclusion), you will need to include an abstract and references. 
+You can (and should!) also use diagrams and tables where appropriate. 
+
+\noindent
+\textbf{Submission:} by email, to your supervisor(s). 
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item The 5-page limit is limited, so talk to your supervisor about what should be included, and whether it is ok to exceed it (within reason). 
+        \item This is very valuable practice for academic writing.
+        \item Conveniently, this report can become a draft for a section in your thesis!
+    \end{itemize}
+\end{tcolorbox}
+
+\subsection*{Literature Review (P/F)}\label{LitReview}
+
+The \textit{Literature Review} (LR) is an overview of the past work in your field of research, as well as relevant knowledge required to understand it, covering a survey of credible sources. 
+The LR is 10 pages of mixed text, diagrams and tables (where appropriate). 
+It should show your understanding of the research area and how your research fits in with pre-existing knowledge. 
+The formatting of the Literature Review should also match the formatting of your Final Thesis (see below, and the Physics MSc guideline). 
+
+
+\noindent
+\textbf{Submission:} by email, to your supervisor(s). 
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item It is very common for the Literature Review to become the introduction to your thesis (with edits). So, two pieces of advice: (i) put some effort into the literature review, because it will save you time later, but (ii) don't try to make the literature review a perfect introduction chapter. By the time you're writing your thesis, you'll have a much better idea of what the introduction needs and you can polish it up quicker than doing it cluelessly at the literature review stage.
+        \item You might worry about how many papers you should reference in your literature review. \textbf{Don't.} Think about what you need to explain your work to another MSc student who does not have the context (someone not in Astro). References will grow organically. As a (very rough) guideline, past students end up with anywhere from \mytilde40-70 references. 
+        \item When it comes to references, more does not equal good! Of course, you can add more references, but unless you contextualise them properly, then quantity alone will not make your literature review better.
+        \item It is advisable to make the last section (about half a page or so) of your Literature Review an introduction to your project, and how it differs from previous work.
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks (cont.)}]
+    \begin{itemize}
+        
+        \item It's ok if you feel a bit unsure about what to do here -- it's common not to have experience making something like a literature review before this point. Ask around for past students' literature reviews/thesis introductions! 
+    \end{itemize}
+\end{tcolorbox}
+
+\subsection*{Advanced Seminar (P/F)}\label{AdvSeminar}
+
+Each research group runs its own \textit{Advanced Seminar}, so what is involved varies between the groups. Here, we outline what is needed for the Astro research group. The Advanced Seminar is an ongoing assessment that you can start (and complete) well before it is due. 
+It involves two components. 
+\begin{enumerate}
+    \item An attendance sheet of talks such as Astro group meetings, Astro Colloquiums, School of Physics Colloquiums, research group meetings, and other relevant talks. 
+    This sheet requires 20 or more entries.
+    
+    \textbf{Example Entry for the Attendance Sheet:}
+    \begin{table}[hbt]
+        \centering
+        \begin{tblr}{colspec={|Q[r,m]|Q[l,m]|Q[l,m]|Q[l,m]|}, rowspec={|Q|Q|}}
+            Date & Meeting Type & Speaker(s) & Topic \\
+            01/01/2024 & Astro Group Meeting & Rachel Webster (Unimelb) & The Biggest Quasar ever found
+        \end{tblr}
+        \label{tab:AdvSeminar}
+    \end{table}
+    \item A two-page report on one of the external astro talks, including background knowledge, results presented, and references. 
+\end{enumerate}
+
+\noindent
+\textbf{Submission:} by email, to the head of the Astro research group (at time of writing, Prof.\ Rachel Webster, \url{r.webster@unimelb.edu.au}).
+\\
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+\begin{itemize}
+    \item Start the attendance sheet early on so you can keep track of what you have and haven't attended.
+    \item The report needs to be on an external, astro-related talk. Astro Colloquiums are the best talks to give you that kind of topic. 
+    \item The report needs to be on the talk itself and what the presenter (and often their group) did. You don't need to present the results as published information or your own research. The background knowledge is only there to contextualise.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+\subsection*{Final Thesis (M)}\label{Thesis}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!white,title={IMPORTANT}]
+    It's very important that you do this correctly. As this is an informal guideline, please check the Physics Masters LMS for formal instructions for this assessment and follow them. 
+\end{tcolorbox}
+ 
+
+The \textit{Final Thesis} is a 50-page report on the key results of your research project. 
+It is marked by a professor in your research group (Astro), and a professor in physics but not your research group. 
+It is worth 70\% of your final mark.
+Your supervisor will also mark it as part of the Research Performance (mentioned below). 
+The 50 pages are inclusive of your Title Page, Abstract, Table of Contents, Statement of Contribution and Originality, Bibliography, and Appendices.
+This is due at midnight on the final Friday of your final research semester (the Friday of week 12). 
+Check the Physics Masters LMS for formatting, submission details, general tips and guidelines. 
+
+\noindent
+\textbf{Submission:} as a PDF file, via the Physics Masters LMS.
+
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item The 50-page limit is a firm upper limit. Note that there's no lower limit. Again, quality over quantity!
+        \item Remember that your markers are probably busy, overworked, and tired professors who are not experts in your field and probably have to read other theses too. 
+        Focus on clarity.
+        Figure out the story of your project, and tell it well.  
+        \item Start writing early! Give yourself time to edit. Writing always takes at least twice as long as you think it will. 
+        \item Remember that you can ask your supervisor, your peers, and others in the Astro research group to read sections and give feedback. 
+        A second pair of eyes is invaluable; having worked on your project for so long, it is natural that you will miss subtle points that can confuse someone unfamiliar with your work. 
+        \item Ask PhDs who did their Masters at UniMelb if they are willing to send you their theses, so you can read them to get an idea on style, formatting, and how you want to write your thesis (or how you don't). PPSS also has a library of past theses if you want more resources. 
+        \item \textbf{ALWAYS} check the Physics Masters LMS for the instructions on how to write the thesis. 
+    \end{itemize}
+\end{tcolorbox}
+
+\subsection*{Final Talk (M)}\label{FinalTalk}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!white,title={IMPORTANT}]
+    It's very important that you do this correctly. As this is an informal guideline, please check the Physics Masters LMS for formal instructions for this assessment and follow them. 
+\end{tcolorbox} 
+
+The \textit{Final Talk} is a 20-minute presentation to the School of Physics, on your research followed by 10 minutes for questions (total of 30 minutes).
+This is marked by all academics attending your talk and is worth 10\% of your final mark.
+The timing of the talk will be organised by the School of Physics (generally 2-3 weeks after the end of semester) and a schedule will be sent out a week or so beforehand.
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item It is better to be a little bit under for time than a little bit over, as the 20-minute mark is usually firm. (Pro tip: plan for \mytilde18 minutes in your practice and slow down for the real presentation.)
+        \item It is recommended to give a practice presentation at the Astro Group Meeting at least 1-2 weeks prior to the final talk (after you submit your thesis!). 
+        The academics will generally try to attend to give you valuable feedback. 
+        You can then give smaller practice presentations to your research group, other MSc students doing the presentation, or anyone who is willing to listen (maybe your cat).    
+    \end{itemize}
+\end{tcolorbox} 
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks (cont.)}]
+    \begin{itemize}
+        \item You don't have to summarise your whole thesis in 20 minutes. 
+        Instead, you can pick the most important result/answer to your key question, and explain it, along with enough information to contextualise it. 
+        Tell the story of your research, which could be a (slightly) different story to your thesis!     
+    \end{itemize}
+\end{tcolorbox} 
+
+\subsection*{Research Performance (M)}\label{ResearchPerformance}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!white,title={IMPORTANT}]
+    As this is an informal guideline, please check the Physics Masters LMS for formal instructions for this assessment and follow them. 
+\end{tcolorbox} 
+
+Your supervisor(s) will also assess your \textit{Research Performance} throughout this project. 
+This assessment is worth 20\% of your final mark. 
+Different supervisors will likely value different things so it is best to talk with your supervisor about their expectations. 
+The Physics Master's LMS also has a document named "MSc Research Performance marking criteria Physics revised 2020 (1).pdf" (at the time of writing) which can also assist.
+
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Tricks}]
+    \begin{itemize}
+        \item Like the Progress Meeting earlier, if a supervisor is unsatisfied with your performance, they will let you know. 
+        \item Being engaged, showing initiative, and doing your best to understand your research may be the best way to do this well (and what you'll likely do anyway as the interesting research you do will probably motivate you).
+        \item As usual, talk to your supervisor(s) if you're concerned with your performance. 
+        It is pretty easy to underestimate yourself with so many things going on, and it's conversely easy to overlook things too. 
+    \end{itemize}
+\end{tcolorbox} 
+
+
+\end{document}
