@@ -1,0 +1,85 @@
+\documentclass[11pt, oneside, a4paper]{article}
+\usepackage{graphicx} 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=20mm, top=30mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+\usepackage{soul}
+% Will make black underlines for links
+% \hypersetup{
+%   colorlinks=true,
+%   linkcolor=black,
+%   linkbordercolor=black,
+% }
+% \makeatletter
+% \Hy@AtBeginDocument{%
+%   \def\@pdfborder{0 0 1}
+%   \def\@pdfborderstyle{/S/U/W 1}
+% }
+% \makeatother
+
+\newcommand{\myboxcolor}{MidnightBlue}
+\newcommand{\tipscolor}{ForestGreen}
+
+\definecolor{mygray}{rgb}{0.92, 0.92, 0.92}
+
+\fancyhead[L]{OwO}
+\fancyhead[R]{Last Updated: 16/12/2024}
+\fancypagestyle{firstpage}{
+  \lhead{OwO}
+  \rhead{Last Updated: 16/12/2024}
+}
+
+\newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\title{Getting started in Room 359}
+
+\begin{document}
+
+\pagestyle{fancy}
+\thispagestyle{firstpage}                                      
+{\centering \LARGE \textsc{Getting started in Room 359} \\}
+\vspace{0.5em}
+
+\Large
+ 
+ 
+
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!white,title={Essentials!}]
+    \begin{itemize}
+        \item The seating plan is on the side of the bookshelf, \textbf{claim a free desk} by writing your name down.
+        \begin{itemize}
+            \item Note the back is reserved for PhDs
+            \item Your desk is yours for your degree so feel free to personalized it and make yourself feel comfy !
+        \end{itemize}
+        \item Please \textbf{email Kim} at \url{kdorrell@unimelb.edu.au} and let her know who you are and who your supervisor is, so she can add you to the Astro mailing list, once you have claimed a desk.
+        \item \textbf{Swipe Access} to the room can be gained by asking for an access form from reception on lv 1.
+        \item \textbf{The printer} in the room can be connect via the IP address: \\
+        \url{10.46.12.14}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=\tipscolor!5!white,colframe=\tipscolor!50!white,title={Tips \& Reminders}]
+    \begin{itemize}
+        \item \textbf{Please lock the door} if you are the last one to leave the room, no matter what time of the day. You can lock/unlock the door by double tapping the sensor
+        \item Feel free the \textbf{check out the bookshelf}. People have worked hard to make sure it is organized and helpful, so please make sure to put things back to where they belong 
+        \item The astro group has a \textbf{Slack channel}, ask you supervisor to add you in
+        \item \textbf{For New Master students}, check out this amazing GitHub by Nithin and Tong containing information on the requirement of completing the research part of your degree:
+        \\
+        \url{https://github.com/n-babu/unimelb-astro-msc}
+        \item Katie also has a wonderful website with a bunch of useful resources related to astro for \textbf{all levels} whether you're master or PhD: 
+        \\
+        \url{https://sites.google.com/view/unimelb-astro-resources/home}
+        \end{itemize}
+\end{tcolorbox} 
+
+\end{document}
